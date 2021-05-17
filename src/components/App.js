@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.sass";
 import Header from "./Header";
+import Main from "./Main";
 
 class App extends Component {
   state = {
@@ -15,6 +16,7 @@ class App extends Component {
     return (
       <div className="app">
         <Header setMenuInfo={this.getMenuInfo} />
+        <Main />
       </div>
     );
   }
